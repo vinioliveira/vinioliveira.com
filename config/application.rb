@@ -58,7 +58,5 @@ module VinoliveraCom
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
-
-    config.assets.precompile = %W(Copse_400.font)
   end
 end
