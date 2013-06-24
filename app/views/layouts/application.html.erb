@@ -3,9 +3,8 @@
 <head>
   <title>vinolivera.com</title>
   <%= stylesheet_link_tag "application", :media => "all" %>
-  <%= stylesheet_link_tag params[:controller] %>
+  <%= controller_stylesheet_link_tag %>
 
-  <%= yield :header %>
   <script type="text/javascript">
     Cufon.replace('h1', {fontFamily: 'Copse', hover:true})
     Cufon.replace('p.info', {fontFamily: 'Gabriola', hover:true})
@@ -15,6 +14,6 @@
 <body>
   <%= yield %>
   <%= javascript_include_tag "application" %>
-  <%= javascript_include_tag  params[:controller] %>
+  <%=  controller_javascript_include_tag %>
 </body>
 </html>
